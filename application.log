@@ -1,0 +1,30 @@
+2024-12-05T12:56:57.459-06:00  INFO 15956 --- [webApp] [main] com.paul.WebAppApplication               : Starting WebAppApplication using Java 21.0.4 with PID 15956 (C:\Java\MavenProject\webApp\target\classes started by anujp in C:\Java\MavenProject\webApp)
+2024-12-05T12:56:57.469-06:00  INFO 15956 --- [webApp] [main] com.paul.WebAppApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-12-05T12:57:00.722-06:00  INFO 15956 --- [webApp] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-05T12:57:00.735-06:00  INFO 15956 --- [webApp] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-05T12:57:00.737-06:00  INFO 15956 --- [webApp] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-05T12:57:00.825-06:00  INFO 15956 --- [webApp] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-05T12:57:00.825-06:00  INFO 15956 --- [webApp] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3203 ms
+2024-12-05T12:57:00.975-06:00  WARN 15956 --- [webApp] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'controller': Unsatisfied dependency expressed through field 'repo': No qualifying bean of type 'com.paul.dao.UserRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2024-12-05T12:57:00.990-06:00  INFO 15956 --- [webApp] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-12-05T12:57:01.049-06:00  INFO 15956 --- [webApp] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-12-05T12:57:01.150-06:00 ERROR 15956 --- [webApp] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field repo in com.paul.homecontroller.Controller required a bean of type 'com.paul.dao.UserRepository' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.paul.dao.UserRepository' in your configuration.
+
